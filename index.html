@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>SIA - Sistema de Informações Academica</title>
+
+    <!--Css-->
+
+    <link rel="stylesheet" href="/styles/styleLogin.css">
+
+    <!--Bootstrap Css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+<body>
+    <main>
+        <section>
+            <div class="grid_left">
+                <div>
+                <div class="txt_page">
+                    <p class="txt_left">
+                        Ensino <strong>Estácio</strong><br>
+                        Brilhe com <strong>+ tecnologia.</strong>
+                    </p>
+                </div>
+                <div class="banner">
+                    <img src="/img/banner.png" alt="Banber Decorativo" class="img_banner">
+                </div>
+            </div>
+            </div>
+
+            <div class="grid_right">
+                <div class="conteiner">
+                    <div class="top_login">
+                        <div class="logo_login">
+                            <img src="/img/logo_estacio.png" alt="Logo Estacio" class="img_Logo_Login">
+                        </div>
+                        <div class="txt_login_header">
+                            <p class="txt_login">
+                                SIA - Sistema de Inforamções Acadêmicas
+                            </p>
+                            <p class="txt_date" id="field_date"></p>
+                        </div>
+                    </div>
+                    <form action="" class="login">
+                        
+                        
+                        <label for="title_matri" class="title_matri">Matricula</label><br>
+                        <div class="conteiner_matri">
+                            <input type="text" placeholder="  Digite sua matrícula" class="input_form">
+                            <div>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-video" viewBox="0 0 16 16" style="margin: 5px 0 0 40px">
+                                    <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1.202Z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="esqueci_matricula">
+                            <a href="#">Não sei ou esqueci a matrícula</a>
+                        </div>
+                        
+                        
+                        <label for="title_senha">Senha</label><br>
+                        <div class="conteiner_matri">
+                        <input type="password" class="input_form" id="password" placeholder="  Digite sua senha"><br>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-lock2" viewBox="0 0 16 16" style="margin: 5px 0 0 40px">
+                                <path d="M8 5a1 1 0 0 1 1 1v1H7V6a1 1 0 0 1 1-1zm2 2.076V6a2 2 0 1 0-4 0v1.076c-.54.166-1 .597-1 1.224v2.4c0 .816.781 1.3 1.5 1.3h3c.719 0 1.5-.484 1.5-1.3V8.3c0-.627-.46-1.058-1-1.224z"/>
+                                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                              </svg>
+                        </div>
+                        </div>
+
+                        <div class="esqueci_matricula">
+                            <a href="#">Não sei ou esqueci a senha</a>
+                        </div>
+
+                        <div class="reCaptcha">
+                            <img src="/img/download.png" alt="reCaptcha" style="width:300px; height=74px; margin: 16px 0px 16px 0px;">
+                        </div>
+                        
+                        <div class="btn">
+                            <button  class="btn btn-outline-success" id="btn" type="submit" style="width: 310px; height:55px ; margin-left: -12px;  background-color: rgb(93, 192, 93); border-color:rgb(93, 192, 93) ; color:white;">Continuar</button>
+                        </div>
+                        <div class="separador">
+                            <p>----------------------ou-----------------------</p>
+                        </div>
+                        <div class="btn_outlook">
+                            <button  id="btn" type="submit" class="btn btn-primary" style="width: 310px; height:55px ;">
+                                <img class="img_btn_outlook"src="/img/outlook.png" alt="logo_outlook">
+                                Autenticar com microsoft outlook
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/scripts/script_date.js"></script>
+    <script src="/scripts/"></script>
+</body>
+</html>
